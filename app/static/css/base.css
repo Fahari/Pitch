@@ -51,7 +51,7 @@ header{
   position: fixed;
   margin: auto
 }
-header ul li{
+header ul {
   float: right;
 }
 #banner{
