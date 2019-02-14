@@ -1,0 +1,87 @@
+*{
+  margin: 0;
+  padding: 0;
+
+}
+#sidebar{
+  position: fixed;
+  width: 200px;
+  height: 100%;
+  background-color: #151719;
+  left: -200px;
+  transition: all 350ms linear;
+  z-index: 50;
+}
+#sidebar.active{
+left: 0px;
+
+}
+
+#sidebar ul li {
+  color: rgba(230,230,230,0.9);
+  list-style: none;
+  padding: 15px;
+  padding: 15px 10px;
+  border-bottom: 1px solid rgba(100,100,100,0.3);
+}
+#sidebar .toggle-btn{
+  position: absolute;
+  left: 230px;
+  top: 20px;
+
+}
+#sidebar .toggle-btn span {
+  display: block;
+  width: 30px;
+  height: 5px;
+  background: #151719;
+  margin: 5px 0px;
+}
+
+body{
+  text-align: center;
+  /* font-family: 'Dancing Script', cursive; */
+  font-family: 'Kaushan Script', cursive;
+}
+header{
+  height: 100px;
+  background-color: #dbdbdb;
+  width: 100%;
+  z-index: 10;
+  position: fixed;
+  margin: auto
+}
+#banner{
+  width: 100%;
+  height: 1500px;
+  position: fixed;
+  top: 100px;
+  /* background: #707070; */
+  /* background: url(static/photo/impress.jpg); */
+  background-size: cover;
+  justify-content: center;
+
+  }
+#footer{
+  width: 100%;
+  position: relative;
+  top: 900px;
+  background: #ebebeb;
+  height: 575px;
+  justify-content: center;
+}
+/* #simple{
+  height: 191px;
+  background-color: #151719;
+  color: rgba(230,230,230,0.9);
+}
+#fun{
+  height: 191px;
+  background-color: #151719;
+  margin-top: 50%;
+} */
+/* #love{
+  height: 191px;
+  background-color: #151719;
+  color: rgba(230,230,230,0.9);
+} */
