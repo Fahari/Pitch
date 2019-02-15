@@ -1,6 +1,9 @@
-from flask import render_template
+from flask import render_template,request,redirect,url_for
 from . import main
 from flask_login import login_required, current_user
+from .forms import PitchForm1, PitchForm2, PitchForm3, CommentForm
+from ..models import User, Pitch,Comment
+
 
 # from app import app
 
@@ -15,7 +18,7 @@ def index():
 
 @main.route('/Funny',methods = ['GET', 'POST'])
 @login_required
-def Interview():
+def Funny():
 
     pitch_form = PitchForm1()
 
@@ -35,7 +38,7 @@ def Interview():
     return render_template("Funny.html", pitch_form = pitch_form, pitches = all_pitches)
 
 @main.route('/Pickuplines',methods = ['GET', 'POST'])
-@login_required
+# @login_required
 def Pickuplines():
 
     pitch_form = PitchForm2()
@@ -78,7 +81,7 @@ def Cheesy():
 
 @main.route('/pitch/<int:id>',methods = ['GET','POST'])
 @login_required
-def pitch(id):
+def comment(id):
 
     my_pitch = Pitch.query.get(id)
     comment_form = CommentForm()
