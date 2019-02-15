@@ -41,15 +41,15 @@ Impress me is simple in the form that you post what you feel you would have said
 5. Heroku for deployment
 
 ## Application link
-click [here]
+click [here](https://impress-me.herokuapp.com/)
 
 ## Set up and Installation
 
 To access this application on your command line, you need to clone it.
-`git clone #`
+`git clone https://github.com/Fahari/Pitch.git`
 
 ### Prerequisites
-The user will require git, flask, postgresql and python3.6+ installed in their machine.
+A user will require git, flask, postgresql and python3.6+ installed in their machine.
 To install these two, you can use the following commands
 ```
 #git
@@ -71,5 +71,5 @@ No known bugs as at the completion of the project.
 Feel free to reach me at karonjekevin67@gmail.com
 
 ### License
-The project is under the MIT licence
+The project is under the [MIT](https://github.com/Fahari/Pitch/blob/master/LICENSE) licence
 Copyright (c) 2019 **Kironji Kevin**
